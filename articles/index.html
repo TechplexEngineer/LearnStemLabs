@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article Index</title>
+	<style type="text/css">
+		li h3 {
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Articles</h1>
+
+	<ul>
+		<li>
+			<a href="https://hackpad.com/0lw8sYI3NmI">PCB Development using gEDA</a>
+		</li>
+		<li><h3>git - Revision Control</h3></li>
+		<ul>
+			<li>
+				<a href="gitcheatsheet">Git Cheat Sheet</a> (<a href="gitcheatsheet/Git Quick Reference.pdf">PDF</a>)
+			</li>
+			<li>
+				<a href="gitcheatsheet/ppt/Installing Git on Windows.pdf">Installing Git on Windows (PDF)</a> (<a href="gitcheatsheet/ppt/Installing Git on Windows.pptx">pptx</a>)
+			</li>
+			<li>
+				<a href="Getting started with GIT.pdf">Getting started with GIT (PDF)</a>
+			</li>
+			<li>
+				<a href="http://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a>
+			</li>
+			<li>
+				<a href="http://blog.eatonphil.com/2015-10-27/dont-include-configs-in-your-git-repos">Don't include configs in your git repos</a>
+			</li>
+			<li>
+				<a href="whygitisbetter">Why Git Is Better than X</a>
+			</li>
+		</ul>
+
+
+
+		<li>
+			<a href="http://nuclear.mutantstargoat.com/articles/make/">Practical Makefiles, by example</a>
+		</li>
+		<li>
+			<a href="http://www.benfrederickson.com/distance-metrics/">People Who Like This Also Like ... -- Distance Metrics for Fun and Profit </a>
+		</li>
+		<li>
+			<a href="cidr.html">CIDR Cheatsheet</a>
+		</li>
+		
+
+	</ul>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').each(function(idx, obj){
+			if (!$(obj).attr('target')) {
+				$(obj).attr('target', '_blank');
+			}
+		});
+	});
+	</script>
+</body>
+</html>
